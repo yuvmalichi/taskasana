@@ -1,0 +1,13 @@
+subscription TaskUndeleted($workspaceId: ID!, $requestId: String!) {
+  taskUndeleted(workspaceId: $workspaceId, requestId: $requestId) {
+    teammateTask {
+      ...TeammateTaskFragment
+    }
+    projectTasks {
+      ...ProjectTaskFragment
+    }
+    deletedTask {
+      id
+    }
+  }
+}

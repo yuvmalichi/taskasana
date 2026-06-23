@@ -1,0 +1,13 @@
+mutation DeleteTaskFeed($input: DeleteTaskFeedInput!) {
+  deleteTaskFeed(input: $input) {
+    taskFeed {
+      ...TaskFeedFragment
+    }
+    taskFeedLikes {
+      ...TaskFeedLikeFragment
+    }
+    taskFiles {
+      ...TaskFileFragment
+    }
+  }
+}

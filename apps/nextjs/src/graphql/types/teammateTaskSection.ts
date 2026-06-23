@@ -1,0 +1,17 @@
+import type { TeammateTaskSectionFragmentFragment } from '@/graphql/types';
+
+export type TeammateTaskSectionResponse =
+  NonNullable<TeammateTaskSectionFragmentFragment>;
+
+export type {
+  DeleteTeammateTaskSectionAndDeleteTasksMutation,
+  DeleteTeammateTaskSectionAndKeepTasksMutation,
+  TeammateTaskSectionCreatedSubscription as TeammateTaskSectionCreatedSubscriptionResponse,
+  TeammateTaskSectionDeletedAndDeleteTasksSubscription as TeammateTaskSectionDeletedAndDeleteTasksSubscriptionResponse,
+  TeammateTaskSectionDeletedAndKeepTasksSubscription as TeammateTaskSectionDeletedAndKeepTasksSubscriptionResponse,
+  TeammateTaskSectionDeletedSubscription as TeammateTaskSectionDeletedSubscriptionResponse,
+  TeammateTaskSectionUndeletedAndDeleteTasksSubscription as TeammateTaskSectionUndeletedAndDeleteTasksSubscriptionResponse,
+  TeammateTaskSectionUndeletedAndKeepTasksSubscription as TeammateTaskSectionUndeletedAndKeepTasksSubscriptionResponse,
+  TeammateTaskSectionUpdatedSubscription as TeammateTaskSectionUpdatedSubscriptionResponse,
+  UpdateTeammateTaskSectionInput,
+} from '@/graphql/types';

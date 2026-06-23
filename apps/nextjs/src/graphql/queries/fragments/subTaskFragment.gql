@@ -1,0 +1,15 @@
+fragment SubTaskFragment on Task {
+  id
+  name
+  assigneeId
+  isNew
+  taskParentId
+  completedAt
+  completed
+  taskPriorityId
+  dueDate
+  dueTime
+  createdBy
+  createdAt
+  updatedAt
+}

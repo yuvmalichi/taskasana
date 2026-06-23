@@ -1,0 +1,5 @@
+query Workspace($where: WorkspaceWhereInput!) {
+  workspace(where: $where) {
+    ...WorkspaceFragment
+  }
+}

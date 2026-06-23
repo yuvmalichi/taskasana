@@ -1,0 +1,10 @@
+query TestTodo($where: TestTodoWhereInput) {
+  testTodo(where: $where) {
+    id
+    name
+    status
+    testUserID
+    updatedAt
+    createdAt
+  }
+}

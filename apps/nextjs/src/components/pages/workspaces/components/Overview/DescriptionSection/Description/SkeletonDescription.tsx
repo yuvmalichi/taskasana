@@ -1,0 +1,25 @@
+import { memo } from 'react';
+import { Flex } from '@/components/ui/flex';
+import { Skeleton } from '@/components/ui/skeleton';
+import { Stack } from '@/components/ui/stack';
+
+export const SkeletonDescription = memo(function SkeletonDescription() {
+  return (
+    <Flex
+      position="absolute"
+      top={0}
+      left={0}
+      w="full"
+      h="full"
+      bg="bg"
+      zIndex={1}
+    >
+      <Stack gap={4} flex={1}>
+        <Skeleton h="16px" w="full" borderRadius="full" />
+        <Skeleton h="16px" w="70%" borderRadius="full" />
+        <Skeleton h="16px" w="60%" borderRadius="full" />
+        <Skeleton h="16px" w="40%" borderRadius="full" />
+      </Stack>
+    </Flex>
+  );
+});

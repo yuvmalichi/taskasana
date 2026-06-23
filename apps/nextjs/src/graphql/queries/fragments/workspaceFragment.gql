@@ -1,0 +1,8 @@
+fragment WorkspaceFragment on Workspace {
+  id
+  name
+  description
+  createdBy
+  createdAt
+  updatedAt
+}

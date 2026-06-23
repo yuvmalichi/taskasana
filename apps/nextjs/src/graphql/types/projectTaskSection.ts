@@ -1,0 +1,16 @@
+import type { ProjectTaskSectionFragmentFragment } from '@/graphql/types';
+
+export type ProjectTaskSectionResponse =
+  NonNullable<ProjectTaskSectionFragmentFragment>;
+
+export type {
+  DeleteProjectTaskSectionAndDeleteTasksMutation,
+  DeleteProjectTaskSectionAndKeepTasksMutation,
+  ProjectTaskSectionCreatedSubscription as ProjectTaskSectionCreatedSubscriptionResponse,
+  ProjectTaskSectionDeletedAndDeleteTasksSubscription as ProjectTaskSectionDeletedAndDeleteTasksSubscriptionResponse,
+  ProjectTaskSectionDeletedAndKeepTasksSubscription as ProjectTaskSectionDeletedAndKeepTasksSubscriptionResponse,
+  ProjectTaskSectionDeletedSubscription as ProjectTaskSectionDeletedSubscriptionResponse,
+  ProjectTaskSectionUndeletedAndDeleteTasksSubscription as ProjectTaskSectionUndeletedAndDeleteTasksSubscriptionResponse,
+  ProjectTaskSectionUndeletedAndKeepTasksSubscription as ProjectTaskSectionUndeletedAndKeepTasksSubscriptionResponse,
+  ProjectTaskSectionUpdatedSubscription as ProjectTaskSectionUpdatedSubscriptionResponse,
+} from '@/graphql/types';

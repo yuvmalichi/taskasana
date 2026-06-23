@@ -1,0 +1,5 @@
+subscription ProjectUpdated($workspaceId: ID!, $requestId: String!) {
+  projectUpdated(workspaceId: $workspaceId, requestId: $requestId) {
+    ...ProjectFragment
+  }
+}

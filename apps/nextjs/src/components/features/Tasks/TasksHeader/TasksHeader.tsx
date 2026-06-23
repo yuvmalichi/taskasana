@@ -1,0 +1,11 @@
+import { memo } from 'react';
+import { Flex, type FlexProps } from '@/components/ui/flex';
+import { useMainStyle } from '@/hooks';
+
+type Props = FlexProps;
+
+export const TasksHeader = memo(function TasksHeader(props: Props) {
+  const { paddingX } = useMainStyle();
+
+  return <Flex maxH="60px" px={paddingX} py={4} bg="bg" {...props} />;
+});

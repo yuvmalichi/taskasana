@@ -1,0 +1,1 @@
+export { SetColorAndIcon } from './SetColorAndIcon';

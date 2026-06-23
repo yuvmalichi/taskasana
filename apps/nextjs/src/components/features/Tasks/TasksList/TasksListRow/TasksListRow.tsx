@@ -1,0 +1,29 @@
+import { memo, useMemo } from 'react';
+import { Flex, type FlexProps } from '@/components/ui/flex';
+import { useClickableHoverStyle } from '@/hooks';
+
+type Props = FlexProps & {
+  selected?: boolean;
+};
+
+export const TasksListRow = memo(function TasksListRow(props: Props) {
+  const { selected, ...rest } = props;
+  const { clickableHoverStyle } = useClickableHoverStyle();
+  const style = useMemo<FlexProps>(() => {
+    return {
+      ...(selected
+        ? { bg: 'teal.50', _hover: { bg: 'teal.50' } }
+        : { bg: 'bg' }),
+    };
+  }, [selected]);
+
+  return (
+    <Flex
+      css={clickableHoverStyle}
+      cursor="auto"
+      h="36px"
+      {...style}
+      {...rest}
+    />
+  );
+});

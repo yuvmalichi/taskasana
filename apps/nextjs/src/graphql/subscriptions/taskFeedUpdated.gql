@@ -1,0 +1,5 @@
+subscription TaskFeedUpdated($workspaceId: ID!, $requestId: String!) {
+  taskFeedUpdated(workspaceId: $workspaceId, requestId: $requestId) {
+    ...TaskFeedFragment
+  }
+}

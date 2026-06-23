@@ -1,0 +1,5 @@
+subscription TaskLikeCreated($workspaceId: ID!, $requestId: String!) {
+  taskLikeCreated(workspaceId: $workspaceId, requestId: $requestId) {
+    ...TaskLikeFragment
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+  "extends": ["./node_modules/biome-config/biome.json"],
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!**/node_modules/",
+      "!**/dist/",
+      "!**/src/graphql/hooks/index.ts",
+      "!**/src/graphql/hooks/enums.ts",
+      "!**/src/graphql/enums/index.ts",
+      "!**/src/graphql/types/index.ts",
+      "!**/src/graphql/types/index.mock.ts",
+      "!**/src/graphql/__schema__.graphql",
+      "!next-env.d.ts"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noForEach": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": [
+        "**/next.config.js",
+        "**/layout.tsx",
+        "**/page.tsx",
+        "**/loading.tsx",
+        "**/error.tsx",
+        "**/not-found.tsx"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
+}

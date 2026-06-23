@@ -1,0 +1,21 @@
+import { memo } from 'react';
+import { Flex, type FlexProps } from '@/components/ui/flex';
+
+type Props = FlexProps;
+
+const maxH = 72;
+export const OverviewRightContent = memo(function OverviewRightContent(
+  props: Props,
+) {
+  return (
+    <Flex
+      maxH={`calc(100vh - ${maxH}px)`}
+      h="full"
+      p={6}
+      overflowY="scroll"
+      flexDirection="column"
+      bg="bg.subtle"
+      {...props}
+    />
+  );
+});
